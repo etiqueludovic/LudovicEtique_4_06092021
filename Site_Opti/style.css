@@ -11,6 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    list-style: none;
 }
 
 a:hover {
@@ -28,7 +29,7 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
+    max-width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
