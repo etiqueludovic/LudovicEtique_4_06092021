@@ -806,8 +806,21 @@ h3 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
+
+.col-sm-4 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.col-sm-4 a {
+    color:black;
+}
+
+
 
 @media (max-width: 1024px) {
     .bloc {
