@@ -649,7 +649,10 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
+    color: #000000;
 }
+
+
 
 .hero-bloc-text {
     font-size: 38px;
@@ -812,6 +815,12 @@ h2 {
     justify-content: space-between;
     width: 100%;
     list-style: none;
+}
+
+@media screen and (max-width:798px) {
+    .col-sm-4 ul {
+        flex-direction: column;
+    }
 }
 
 .col-sm-4 a {
