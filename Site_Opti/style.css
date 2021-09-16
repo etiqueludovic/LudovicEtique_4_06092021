@@ -827,7 +827,10 @@ h2 {
     color:black;
 }
 
-
+#citation{
+    background-color: #e2e0e0;
+    border-left:solid 2px #cccccc;
+}
 
 @media (max-width: 1024px) {
     .bloc {
