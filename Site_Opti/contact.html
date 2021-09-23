@@ -2,22 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Contact, Site, Web Design, Lyon, la chouette agence">
     <meta name="description" content="Contactez La chouette agence basé à lyon est spécialisé dans le Web Design">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     <meta name="robots" content="follow">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
     <title>Contact, La Chouette agence</title>
 
     
@@ -27,6 +26,7 @@
     
 </head>
 <body>
+<header>
 <!-- Principal conteneur -->
 <div class="page-container">
     
@@ -36,21 +36,23 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">	
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo agence Web Design Lyon" height="40" /></a>				
+				<a class="navbar-brand" aria-label="Logo accédant à la page d'accueil" href="index.html"><img src="img/la-chouette-agence.png" alt="logo la chouette agence" height="40" /></a>				
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a aria-label="lien pour revenir à la page d'accueil" href="index.html">Accueil</a>
 					</li>
 					<li>
-						<a href="#bloc-7">Nous Contacter</a>
+						<a aria-label="lien vers le formulaire de contact" href="#bloc-7">Nous Contacter</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 </div>
+</div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
@@ -81,26 +83,26 @@
 						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" placeholder="Dupond Jean" required />
+						<input aria-label="Champ texte pour indiquer son nom" id="name" class="form-control" placeholder="Dupond Jean" required />
 					</div>
 					<div class="form-group">
 						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" placeholder="exemple@lachouetteagence.com" required />
+						<input aria-label="Champ texte pour indiquer son adresse mail de contact" id="email" class="form-control" type="email" placeholder="exemple@lachouetteagence.com" required />
 					</div>
 					<div class="form-group">
 						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input id="input_504" class="form-control" type="text" placeholder="exemple : réseaux sociaux" required/>
+						<input aria-label="Champ texte pour indiquer, Comment nous avez-vous connu ?" id="input_504" class="form-control" type="text" placeholder="exemple : réseaux sociaux" required/>
 					</div>
 					<div class="form-group">
 						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" placeholder="Exemple: Renouveler et améliorer le design de notre site web" required></textarea>
+						</label><textarea  aria-label="Indiquer le brief de votre projet, Ajoutez autant de détails que nécessaire" id="message" class="form-control" rows="4" cols="50" placeholder="Exemple: Renouveler et améliorer le design de notre site web" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button aria-label="Bouton pour envoyer votre formulaire" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
@@ -119,7 +121,7 @@
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
-
+<footer>
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
@@ -131,22 +133,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/?lang=fr"><span class="fa fa-twitter icon-md">Twitter</span></a>
+							<a aria-label="lien Twitter" class="social" href="https://twitter.com/?lang=fr"><span class="fa fa-twitter icon-md">Twitter</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md">Facebook</span></a>
+							<a aria-label="lien Facebook" class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md">Facebook</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md">Dribbble</span></a>
+							<a aria-label="lien Dribbble" class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md">Dribbble</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md">Intagram</span></a>
+							<a aria-label="lien Instagram" class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md">Intagram</span></a>
 						</div>
 					</div>
 				</div>
@@ -155,8 +157,7 @@
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->
-
-</div>
+</footer>
 <!-- Principal conteneur END -->
     
 
